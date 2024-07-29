@@ -1,0 +1,18 @@
+@use "../variables" as *;
+@use "../media" as *;
+
+.choices {
+
+  &__btn {
+
+  }
+
+  &__box {
+    display: none;
+
+    &_open {
+      display: block;
+    }
+  }
+
+}

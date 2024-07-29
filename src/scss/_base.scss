@@ -1,5 +1,5 @@
 @use "./variables" as *;
-
+@use "./media" as *;
 body {
   font-family: $font-family;
 }
@@ -34,6 +34,10 @@ body {
   font-size: 16px;
   color: #000;
   background-color: $bg;
+
+  @include mobile {
+    font-size: 14px;
+  }
 }
 
 
@@ -70,6 +74,7 @@ ul {
 h1,
 h2,
 h3,
+h4
 p,
 figure,
 fieldset {
@@ -103,4 +108,16 @@ iframe {
   max-width: 1354px;
   padding: 0 27px;
   margin: 0 auto;
+
+  @include tablet {
+    max-width: 694px;
+  }
+
+  @include mobile {
+    padding: 0 14px;
+  }
+}
+
+input:focus {
+  border: none;
 }
