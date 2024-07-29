@@ -19,7 +19,7 @@ const formatSearchParams = params => {
 
     return `?${searchParams.toString()}`;
 }
-export const API_URL = 'https://brawny-historical-lute.glitch.me';
+export const API_URL = 'https://mirano-api-tuhm.onrender.com/';
 export const fetchProducts = async (params = {}) => {
   try {
       const response = await fetch(`${API_URL}/api/products${formatSearchParams(params)}`);
